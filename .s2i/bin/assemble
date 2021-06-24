@@ -4,10 +4,15 @@ set -x
 
 set -eo pipefail
 
+APP_ROOT=${APP_ROOT:-/opt/app-root/src}
 
-# Execute original assemble script.
+# Run the original Python S2I assemble script to install packages.
 
-/opt/app-root/builder/assemble
+/usr/libexec/s2i/assemble
+
+# Remove the cached package dependencies files generated from s2i assemble script.
+rm -rf /tmp/Pipfile.lock
+rm -rf /tmp/requirements.txt
 
 # Activate ipywidgets extension.
 
