@@ -1,9 +1,9 @@
 check:
   - thoth-build
 build:
-  base-image: "quay.io/thoth-station/s2i-minimal-py38-notebook:v0.0.13"
+  base-image: "quay.io/thoth-station/s2i-minimal-py38-notebook:v0.0.15"
   build-stratergy: Source
   registry: quay.io
-  registry-org: thoth-station
-  registry-project: s2i-generic-data-science-notebook
-  registry-secret: thoth-station-thoth-pusher-secret
+  registry-org: modh
+  registry-project: odh-generic-data-science-notebook
+  registry-secret: modh-pusher-secret
