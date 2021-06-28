@@ -24,11 +24,9 @@ nbclassic==0.2.6
 numpy==1.19.2
 pandas==1.2.4
 plotly
-pyarrow
 s3fs
 scipy==1.6.2
 scikit-image
 scikit-learn==0.24.1
 seaborn
 sqlalchemy
-statsmodels
