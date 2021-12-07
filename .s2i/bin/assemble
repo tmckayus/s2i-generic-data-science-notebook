@@ -8,8 +8,6 @@ set -eo pipefail
 
 /opt/app-root/builder/assemble
 
-pip3 uninstall -y jupyterlab-requirements
-
 # Activate ipywidgets extension.
 
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
