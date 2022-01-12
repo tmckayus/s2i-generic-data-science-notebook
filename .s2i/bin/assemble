@@ -11,7 +11,7 @@ set -eo pipefail
 # Activate ipywidgets extension.
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
-jupyter lab build
+jupyter lab build --log-level DEBUG
 
 # Enable jupyterlab-s3-browser for s3 storage browsing
 
